@@ -1,0 +1,52 @@
+@import "root";
+@import "component/button";
+@import "component/offcanvas";
+
+// style
+// aside style
+.sidebar {
+  background-color: #1a1a1d;
+  color: inherit;
+  border-bottom: 1px solid #d8dbbd;
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: inherit;
+  }
+  form {
+    .form-control {
+      border: 2px solid #d8dbbd;
+      font-size: 1rem;
+      &:focus {
+        border: 2px solid #fab12f;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+  //   offcanvas sidebar
+  #offcanvasNavbar {
+    background-color: #1a1a1d;
+    color: inherit;
+    .offcanvas-header {
+      border-bottom: 1px solid #d8dbbd;
+    }
+    .offcanvas-body {
+      .nav-link {
+        border-bottom: 1px solid #d8dbbd;
+        font-size: 1.1rem;
+        color: #d8dbbd;
+        &:hover {
+          color: #fab12f;
+        }
+        &.active {
+          color: #fab12f;
+        }
+        i {
+          margin-right: 0.5rem;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

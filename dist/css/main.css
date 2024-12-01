@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mabry Pro", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+body {
+  background-color: #1a1a1d;
+  color: #f1f0e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mabry Pro", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+body {
+  background-color: #1a1a1d;
+  color: #f1f0e8;
+}
+
+.btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 1.25rem;
+  color: inherit;
+  border: 1px solid #d8dbbd;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 4px 4px 0px 0px #d8dbbd;
+  transform: translate(-3px, -3px);
+  transition: 0.3s ease-in-out;
+  border: 1px solid #d8dbbd;
+}
+.btn:focus {
+  border: 1px solid #d8dbbd;
+}
+.btn:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+.btn.btn-hover-orange:hover {
+  background-color: #fab12f;
+  color: #1a1a1d;
+}
+.btn.btn-hover-danger:hover {
+  background-color: red;
+  color: #d8dbbd;
+}
+
+@media screen and (min-width: 576px) {
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mabry Pro", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+body {
+  background-color: #1a1a1d;
+  color: #f1f0e8;
+}
+
+.offcanvas.offcanvas-top {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.sidebar {
+  background-color: #1a1a1d;
+  color: inherit;
+  border-bottom: 1px solid #d8dbbd;
+}
+.sidebar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+}
+.sidebar form .form-control {
+  border: 2px solid #d8dbbd;
+  font-size: 1rem;
+}
+.sidebar form .form-control:focus {
+  border: 2px solid #fab12f;
+  box-shadow: none;
+  outline: none;
+}
+.sidebar #offcanvasNavbar {
+  background-color: #1a1a1d;
+  color: inherit;
+}
+.sidebar #offcanvasNavbar .offcanvas-header {
+  border-bottom: 1px solid #d8dbbd;
+}
+.sidebar #offcanvasNavbar .offcanvas-body .nav-link {
+  border-bottom: 1px solid #d8dbbd;
+  font-size: 1.1rem;
+  color: #d8dbbd;
+}
+.sidebar #offcanvasNavbar .offcanvas-body .nav-link:hover {
+  color: #fab12f;
+}
+.sidebar #offcanvasNavbar .offcanvas-body .nav-link.active {
+  color: #fab12f;
+}
+.sidebar #offcanvasNavbar .offcanvas-body .nav-link i {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=main.css.map */

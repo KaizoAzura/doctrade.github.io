@@ -1,0 +1,46 @@
+@import "../root";
+
+// style
+
+.btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 1.25rem;
+  color: inherit;
+  border: 1px solid #d8dbbd;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 4px 4px 0px 0px #d8dbbd;
+    transform: translate(-3px, -3px);
+    transition: 0.3s ease-in-out;
+    border: 1px solid #d8dbbd;
+  }
+  &:focus {
+    border: 1px solid #d8dbbd;
+  }
+  &:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  //   button hover color
+  &.btn-hover-orange {
+    &:hover {
+      background-color: #fab12f;
+      color: #1a1a1d;
+    }
+  }
+  //   hover danger
+  &.btn-hover-danger {
+    &:hover {
+      background-color: red;
+      color: #d8dbbd;
+    }
+  }
+}
+
+// responsive
+
+@media screen and (min-width: 576px) {
+  .btn {
+    font-size: 1.1rem;
+  }
+}
