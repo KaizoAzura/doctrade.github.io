@@ -64,12 +64,65 @@
         >
           <i class="ri-search-2-line"></i>
         </button>
-        <button class="btn d-none d-sm-flex ms-2" type="button">
-          <i class="ri-notification-3-line"></i>
-        </button>
-        <button class="btn d-none d-sm-flex ms-2" type="button">
-          <i class="ri-mail-ai-line"></i>
-        </button>
+        <!-- dropdown notif -->
+        <div class="dropstart">
+          <button
+            class="btn d-none d-sm-flex ms-2"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            <i class="ri-notification-3-line"></i>
+          </button>
+          <ul class="dropdown-menu dark mt-5 mx-auto py-2 px-3">
+            <a href="#" class="notif p-2 my-2">
+              <div class="icon-notif me-2">
+                <i class="ri-shopping-cart-line"></i>
+              </div>
+              <div class="text-notif">
+                <h6 class="mb-1">Cart Shopping</h6>
+                <p class="mb-0">check your cart now!!!</p>
+              </div>
+            </a>
+            <a href="#" class="notif p-2 my-2">
+              <div class="icon-notif me-2">
+                <i class="ri-mail-ai-fill"></i>
+              </div>
+              <div class="text-notif">
+                <h6 class="mb-1">Mail Notifications</h6>
+                <p class="mb-0">Someone send you email, click here to check</p>
+              </div>
+            </a>
+            <a href="#" class="notif p-2 my-2">
+              <div class="icon-notif me-2">
+                <i class="ri-wallet-fill"></i>
+              </div>
+              <div class="text-notif">
+                <h6 class="mb-1">Wallet Notifications</h6>
+                <p class="mb-0">Top Up now and discover product</p>
+              </div>
+            </a>
+            <a href="#" class="notif p-2 my-2">
+              <div class="icon-notif me-2">
+                <i class="ri-news-line"></i>
+              </div>
+              <div class="text-notif">
+                <h6 class="mb-1">Ads Notifications</h6>
+                <p class="mb-0">Boost your product with our ads</p>
+              </div>
+            </a>
+          </ul>
+        </div>
+        <!-- dropdown mail -->
+        <div class="dropstart">
+          <button
+            class="btn d-none d-sm-flex ms-2"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            <i class="ri-mail-ai-line"></i>
+          </button>
+          <ul class="dropdown-menu mt-5 light"></ul>
+        </div>
         <!-- search offcanvas -->
         <div
           class="offcanvas offcanvas-top"

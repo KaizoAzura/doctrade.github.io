@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Mabry Pro", sans-serif;
 }
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
 
 body {
   background-color: #1a1a1d;
@@ -29,6 +36,7 @@ body {
 .btn:active {
   transform: translate(0);
   box-shadow: none;
+  transition: 0.1s ease-in-out;
 }
 .btn.btn-hover-orange:hover {
   background-color: #fab12f;

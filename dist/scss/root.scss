@@ -19,3 +19,10 @@ body {
   background-color: #1a1a1d;
   color: #f1f0e8;
 }
+
+// hover and active animation
+
+$--hover-animation: translate(-4px, -4px);
+$--transition-duration-01s: 0.1s ease in out;
+$--transition-duration-03s: 0.3s ease in out;
+$--box-shadow-hover: -4px -4px 0px 0px;
