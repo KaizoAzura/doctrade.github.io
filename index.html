@@ -26,6 +26,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <!-- sidebar -->
@@ -152,9 +154,13 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
-              DocTrade
-            </h5>
+            <a href="#!" class="profile d-flex align-items-center me-5">
+              <img src="src/logo.png" alt="logo" />
+              <div class="d-flex flex-column ms-2">
+                <h6 class="profile-name mb-1">Nicolas Satria Afri Liyansa</h6>
+                <p class="mb-0 profile-membership">Basic Member</p>
+              </div>
+            </a>
             <button
               type="button"
               class="btn btn-hover-danger ms-auto"
@@ -220,6 +226,11 @@
                   ><i class="ri-mail-ai-line"></i>Mail</a
                 >
               </li>
+              <li class="nav-item">
+                <a class="nav-link p-3" href="#"
+                  ><i class="ri-discuss-fill"></i>Messages</a
+                >
+              </li>
               <!-- line divider -->
               <li class="nav-item">
                 <a class="nav-link p-3 disabled" href="#" aria-disabled="true">
@@ -248,7 +259,188 @@
       </div>
     </nav>
     <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="container content py-5 mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title text-center text-sm-start">
+            Hi, Welcome to DocTrade
+          </h1>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-6 col-xxl-3 my-2">
+          <div class="balance-card content-card p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h6>Balance</h6>
+              <i
+                class="ri-information-2-line"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Your current balance available for payout"
+              ></i>
+            </div>
+            <span class="balance">$0</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xxl-3 my-2">
+          <div class="balance-card content-card p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h6>Last 7 Days</h6>
+              <i
+                class="ri-information-2-line"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Your total sales in the last 7 days"
+              ></i>
+            </div>
+            <span class="balance">$0</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xxl-3 my-2">
+          <div class="balance-card content-card p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h6>Last 28 Days</h6>
+              <i
+                class="ri-information-2-line"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Your total sales in the last 28 days"
+              ></i>
+            </div>
+            <span class="balance">$0</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xxl-3 my-2">
+          <div class="balance-card content-card p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <h6>Total Earning</h6>
+              <i
+                class="ri-information-2-line"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Your all-time net earnings from all products, excluding refunds and chargebacks"
+              ></i>
+            </div>
+            <span class="balance">$0</span>
+          </div>
+        </div>
+      </div>
+      <!-- getting started -->
+      <div class="row my-4">
+        <div class="col-12"><h3>Getting Started</h3></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xxl-4">
+          <div class="starting-card content-card d-flex align-items-center p-3">
+            <i class="ri-checkbox-circle-fill"></i>
+            <h6 class="mb-0 ms-2 done">Customize your profile</h6>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-4">
+          <div class="starting-card content-card d-flex align-items-center p-3">
+            <i class="ri-checkbox-blank-circle-line"></i>
+            <h6 class="mb-0 ms-2">Get your first follower</h6>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-4">
+          <div class="starting-card content-card d-flex align-items-center p-3">
+            <i class="ri-checkbox-circle-fill"></i>
+            <h6 class="mb-0 ms-2 done">Get your first pay out</h6>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-4">
+          <div class="starting-card content-card d-flex align-items-center p-3">
+            <i class="ri-checkbox-circle-fill"></i>
+            <h6 class="mb-0 ms-2 done">Create your first product</h6>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-4">
+          <div class="starting-card content-card d-flex align-items-center p-3">
+            <i class="ri-checkbox-blank-circle-line"></i>
+            <h6 class="mb-0 ms-2">Make your first sale</h6>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-4">
+          <div class="starting-card content-card d-flex align-items-center p-3">
+            <i class="ri-checkbox-circle-fill"></i>
+            <h6 class="mb-0 ms-2 done">Send out your first email blast</h6>
+          </div>
+        </div>
+      </div>
+      <!-- chart sale -->
+      <div class="row my-4">
+        <div class="col-12"><h3>Chart Sale</h3></div>
+      </div>
+      <div class="row">
+        <div class="col-12 chart-sale w-100">
+          <canvas id="chartSale" class="p-3 content-card" height="300"></canvas>
+        </div>
+      </div>
+      <!-- connection -->
+      <div class="row my-4">
+        <div class="col-12"><h3>Connection</h3></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 my-2">
+          <div class="connection-card content-card p-3 text-center h-100">
+            <img src="src/email-img.webp" class="img-fluid" alt="Email image" />
+            <h5 class="my-3">Connect with your customers.</h5>
+            <p class="mb-0">
+              Post new updates, send email broadcasts, and use powerful
+              automated workflows to connect and grow your audience.
+            </p>
+            <a href="#" class="btn btn-hover-orange my-3">New Email</a>
+          </div>
+        </div>
+        <div class="col-lg-6 my-2">
+          <div class="connection-card content-card p-3 text-center h-100">
+            <img
+              src="src/Collaborator-img.png"
+              class="img-fluid"
+              alt="Collaborator image"
+            />
+            <h5 class="my-3">No collaborators yet</h5>
+            <p class="mb-0">
+              Share your revenue with the people who helped create your
+              products.
+            </p>
+            <a href="#" class="btn btn-hover-orange my-3">Collab Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- more information -->
+      <div class="row my-4">
+        <div class="col-12"><h3>Looking for more information ?</h3></div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 my-2">
+          <div class="content-card information-card p-3">
+            <a href="#" class="btn w-100"
+              ><i class="ri-question-line"></i>View help option</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 my-2">
+          <div class="content-card information-card p-3">
+            <a href="#" class="btn w-100"
+              ><i class="ri-feedback-line"></i>Send feedback</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
     <!-- js link -->
     <script src="dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- chart script -->
+    <script src="dist/js/chart.js"></script>
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
